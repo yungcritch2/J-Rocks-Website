@@ -32,8 +32,11 @@ const categories = [
     description: "Rings designed to mark your moments with lasting elegance.",
     icon: (
       <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <circle cx="12" cy="12" r="9" strokeWidth={1} />
-        <circle cx="12" cy="12" r="5" strokeWidth={1} />
+        {/* Ring band */}
+        <ellipse cx="12" cy="15" rx="8" ry="6" strokeWidth={1} />
+        {/* Gemstone */}
+        <path d="M8 9 L12 4 L16 9 Z" strokeWidth={1} strokeLinejoin="round" />
+        <line x1="8" y1="9" x2="16" y2="9" strokeWidth={1} />
       </svg>
     ),
   },
