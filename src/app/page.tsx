@@ -31,16 +31,19 @@ const categories = [
     title: "Custom Rings",
     description: "Rings designed to mark your moments with lasting elegance.",
     icon: (
-      <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 28 28">
         {/* Left ring */}
-        <circle cx="9" cy="15" r="6.5" strokeWidth={1} />
+        <circle cx="11" cy="18" r="7" strokeWidth={1.2} />
         {/* Right ring */}
-        <circle cx="15" cy="15" r="6.5" strokeWidth={1} />
-        {/* Small diamond on left ring */}
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M7 7.5 L8 5.5 L10 5.5 L11 7.5 L9 9.5 Z" />
-        <line x1="7" y1="7.5" x2="11" y2="7.5" strokeWidth={1} />
-        <path strokeWidth={1} d="M8 5.5 L8.5 7.5 M10 5.5 L9.5 7.5 M9 5.5 L9 7.5" />
-        <path strokeWidth={1} d="M8.5 7.5 L9 9.5 L9.5 7.5" />
+        <circle cx="17" cy="18" r="7" strokeWidth={1.2} />
+        {/* Diamond outline - larger and more prominent */}
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.2} d="M8 8.5 L9.5 5 L12.5 5 L14 8.5 L11 12 Z" />
+        {/* Diamond middle line */}
+        <line x1="8" y1="8.5" x2="14" y2="8.5" strokeWidth={1.2} />
+        {/* Diamond top facet lines */}
+        <path strokeWidth={1.2} d="M9.5 5 L10 8.5 M12.5 5 L12 8.5 M11 5 L11 8.5" />
+        {/* Diamond bottom facet lines */}
+        <path strokeWidth={1.2} d="M10 8.5 L11 12 L12 8.5" />
       </svg>
     ),
   },
