@@ -118,11 +118,13 @@ export default function HomePage() {
     <>
       {/* ===== HERO ===== */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        {/* Subtle background accents */}
-        <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <div className="absolute top-1/4 -left-32 w-96 h-96 bg-gold/5 rounded-full blur-3xl" />
-          <div className="absolute bottom-1/4 -right-32 w-96 h-96 bg-gold/5 rounded-full blur-3xl" />
-        </div>
+        {/* Marble background image */}
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: "url('/Marble Background.jpg')" }}
+        />
+        {/* Subtle overlay for text readability */}
+        <div className="absolute inset-0 bg-white/40" />
 
         <div className="relative max-w-5xl mx-auto px-6 text-center pt-20">
           <motion.div
