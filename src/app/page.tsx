@@ -31,16 +31,18 @@ const categories = [
     title: "Custom Rings",
     description: "Rings designed to mark your moments with lasting elegance.",
     icon: (
-      <svg className="w-8 h-8" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor">
+      <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         {/* Ring band */}
-        <path d="M12 22c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8-3.582 8-8 8zm0-2.5c3.038 0 5.5-2.462 5.5-5.5S15.038 8.5 12 8.5 6.5 10.962 6.5 14s2.462 5.5 5.5 5.5z" />
-        {/* Prongs connecting diamond to band */}
-        <path d="M9.5 9.5L10.5 7.5M14.5 9.5L13.5 7.5" strokeWidth={0.8} fill="none" />
-        {/* Diamond - filled shape with facet lines */}
-        <path d="M8.5 5 L10 2 L14 2 L15.5 5 L12 8 Z" strokeWidth={0.5} />
-        <path d="M10 2 L10.5 5 M14 2 L13.5 5 M12 2 L12 5" strokeWidth={0.4} fill="none" />
-        <line x1="8.5" y1="5" x2="15.5" y2="5" strokeWidth={0.4} />
-        <path d="M10.5 5 L12 8 L13.5 5" strokeWidth={0.4} fill="none" />
+        <circle cx="12" cy="15" r="7" strokeWidth={1} />
+        {/* Prongs */}
+        <line x1="9.8" y1="9.5" x2="10.2" y2="7.5" strokeWidth={1} />
+        <line x1="14.2" y1="9.5" x2="13.8" y2="7.5" strokeWidth={1} />
+        {/* Diamond outline */}
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M8.5 5.5 L10 2.5 L14 2.5 L15.5 5.5 L12 8.5 Z" />
+        {/* Diamond facet lines */}
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M10 2.5 L10.5 5.5 M14 2.5 L13.5 5.5 M12 2.5 L12 5.5" />
+        <line x1="8.5" y1="5.5" x2="15.5" y2="5.5" strokeWidth={1} />
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M10.5 5.5 L12 8.5 L13.5 5.5" />
       </svg>
     ),
   },
