@@ -32,25 +32,15 @@ const categories = [
     description: "Rings designed to mark your moments with lasting elegance.",
     icon: (
       <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        {/* Ring band - outer circle */}
-        <circle cx="12" cy="16" r="6.5" strokeWidth={1} />
-        {/* Ring band - inner arc (partial circle for depth) */}
-        <path strokeLinecap="round" strokeWidth={1} d="M7 18.5a6 6 0 0 0 10.5-1" />
-        {/* Prongs connecting to diamond */}
-        <line x1="10.5" y1="10.5" x2="10.8" y2="8.5" strokeWidth={1} />
-        <line x1="13.5" y1="10.5" x2="13.2" y2="8.5" strokeWidth={1} />
-        {/* Diamond outline */}
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M9 6 L10.5 3.5 L13.5 3.5 L15 6 L12 8.5 Z" />
-        {/* Diamond facet lines */}
-        <line x1="9" y1="6" x2="15" y2="6" strokeWidth={1} />
-        <path strokeLinejoin="round" strokeWidth={1} d="M10.5 3.5 L11 6 L12 8.5 L13 6 L13.5 3.5" />
-        <line x1="12" y1="3.5" x2="12" y2="6" strokeWidth={1} />
-        {/* Sparkle rays */}
-        <line x1="12" y1="1" x2="12" y2="2.2" strokeWidth={1} strokeLinecap="round" />
-        <line x1="8" y1="2" x2="8.8" y2="3" strokeWidth={1} strokeLinecap="round" />
-        <line x1="16" y1="2" x2="15.2" y2="3" strokeWidth={1} strokeLinecap="round" />
-        <line x1="6.5" y1="4" x2="7.5" y2="4.5" strokeWidth={1} strokeLinecap="round" />
-        <line x1="17.5" y1="4" x2="16.5" y2="4.5" strokeWidth={1} strokeLinecap="round" />
+        {/* Left ring */}
+        <circle cx="9" cy="15" r="6.5" strokeWidth={1} />
+        {/* Right ring */}
+        <circle cx="15" cy="15" r="6.5" strokeWidth={1} />
+        {/* Small diamond on left ring */}
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M7 7.5 L8 5.5 L10 5.5 L11 7.5 L9 9.5 Z" />
+        <line x1="7" y1="7.5" x2="11" y2="7.5" strokeWidth={1} />
+        <path strokeWidth={1} d="M8 5.5 L8.5 7.5 M10 5.5 L9.5 7.5 M9 5.5 L9 7.5" />
+        <path strokeWidth={1} d="M8.5 7.5 L9 9.5 L9.5 7.5" />
       </svg>
     ),
   },
