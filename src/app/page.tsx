@@ -31,12 +31,16 @@ const categories = [
     title: "Custom Rings",
     description: "Rings designed to mark your moments with lasting elegance.",
     icon: (
-      <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <svg className="w-8 h-8" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor">
         {/* Ring band */}
-        <ellipse cx="12" cy="15" rx="8" ry="6" strokeWidth={1} />
-        {/* Gemstone */}
-        <path d="M8 9 L12 4 L16 9 Z" strokeWidth={1} strokeLinejoin="round" />
-        <line x1="8" y1="9" x2="16" y2="9" strokeWidth={1} />
+        <path d="M12 22c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8-3.582 8-8 8zm0-2.5c3.038 0 5.5-2.462 5.5-5.5S15.038 8.5 12 8.5 6.5 10.962 6.5 14s2.462 5.5 5.5 5.5z" />
+        {/* Prongs connecting diamond to band */}
+        <path d="M9.5 9.5L10.5 7.5M14.5 9.5L13.5 7.5" strokeWidth={0.8} fill="none" />
+        {/* Diamond - filled shape with facet lines */}
+        <path d="M8.5 5 L10 2 L14 2 L15.5 5 L12 8 Z" strokeWidth={0.5} />
+        <path d="M10 2 L10.5 5 M14 2 L13.5 5 M12 2 L12 5" strokeWidth={0.4} fill="none" />
+        <line x1="8.5" y1="5" x2="15.5" y2="5" strokeWidth={0.4} />
+        <path d="M10.5 5 L12 8 L13.5 5" strokeWidth={0.4} fill="none" />
       </svg>
     ),
   },
