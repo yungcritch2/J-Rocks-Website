@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-background: #faf9f7;
+  --color-foreground: #1a1a1a;
+  --color-gold: #b8960c;
+  --color-gold-light: #d4af37;
+  --color-charcoal: #2d2d2d;
+  --color-gray-warm: #6b6b6b;
+  --color-cream: #f5f0eb;
+  --color-marble: #f8f6f3;
+  --color-marble-dark: #ede8e2;
+  --font-sans: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --font-body: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+}
+
+body {
+  background-color: var(--color-marble);
+  color: var(--color-foreground);
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+}
+
+.font-heading {
+  font-family: 'Cormorant Garamond', Georgia, Cambria, 'Times New Roman', serif;
+}
+
+/* Marble texture background */
+.marble-bg {
+  background-color: var(--color-marble);
+  background-image:
+    radial-gradient(ellipse at 20% 50%, rgba(237, 232, 226, 0.5) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 20%, rgba(245, 240, 235, 0.4) 0%, transparent 50%),
+    radial-gradient(ellipse at 50% 80%, rgba(237, 232, 226, 0.3) 0%, transparent 50%);
+}
+
+/* Gold gradient text */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #b8960c 0%, #d4af37 50%, #b8960c 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-marble);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-gold);
+  border-radius: 3px;
+}
