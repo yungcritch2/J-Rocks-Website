@@ -31,19 +31,13 @@ const categories = [
     title: "Custom Rings",
     description: "Rings designed to mark your moments with lasting elegance.",
     icon: (
-      <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 28 28">
-        {/* Left ring */}
-        <circle cx="11" cy="18" r="7" strokeWidth={1.2} />
-        {/* Right ring */}
-        <circle cx="17" cy="18" r="7" strokeWidth={1.2} />
-        {/* Diamond outline - larger and more prominent */}
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.2} d="M8 8.5 L9.5 5 L12.5 5 L14 8.5 L11 12 Z" />
-        {/* Diamond middle line */}
-        <line x1="8" y1="8.5" x2="14" y2="8.5" strokeWidth={1.2} />
-        {/* Diamond top facet lines */}
-        <path strokeWidth={1.2} d="M9.5 5 L10 8.5 M12.5 5 L12 8.5 M11 5 L11 8.5" />
-        {/* Diamond bottom facet lines */}
-        <path strokeWidth={1.2} d="M10 8.5 L11 12 L12 8.5" />
+      <svg className="w-8 h-8" fill="currentColor" stroke="none" viewBox="0 0 24 24">
+        {/* Ring band */}
+        <path d="M12 6.5C7.86 6.5 4.5 9.86 4.5 14s3.36 7.5 7.5 7.5 7.5-3.36 7.5-7.5S16.14 6.5 12 6.5zm0 12c-2.49 0-4.5-2.01-4.5-4.5S9.51 9.5 12 9.5s4.5 2.01 4.5 4.5-2.01 4.5-4.5 4.5z" />
+        {/* Diamond prongs connecting to ring */}
+        <path d="M10.2 8.2L11 6.5h2l.8 1.7" />
+        {/* Diamond gem */}
+        <path d="M8.5 4.5L9.5 2.5h5l1 2h-7zM8.5 4.5L12 7.5l3.5-3h-7z" />
       </svg>
     ),
   },
