@@ -14,7 +14,7 @@ const allPieces = [
   { title: "Custom Name Pendant", category: "Pendants" },
   { title: "Heart Locket Pendant", category: "Pendants" },
   { title: "Diamond Cross Pendant", category: "Pendants" },
-  { title: "Emerald Signet Ring", category: "Rings" },
+  { title: "Princess Cut Solitaire Ring", category: "Rings", image: "/princess-cut-ring.jpg" },
   { title: "Custom Engagement Ring", category: "Rings" },
   { title: "Diamond Pinky Ring", category: "Rings" },
   { title: "Iced Tennis Bracelet", category: "Bracelets" },
@@ -26,7 +26,7 @@ const filters = ["All", "Chains", "Pendants", "Rings", "Bracelets"];
 
 export default function GalleryContent() {
   const [active, setActive] = useState("All");
-  const [lightbox, setLightbox] = useState<{ title: string; category: string } | null>(null);
+  const [lightbox, setLightbox] = useState<{ title: string; category: string; image?: string } | null>(null);
 
   const filtered = active === "All" ? allPieces : allPieces.filter((p) => p.category === active);
 
@@ -72,6 +72,7 @@ export default function GalleryContent() {
                   key={piece.title}
                   title={piece.title}
                   category={piece.category}
+                  image={piece.image}
                   index={i}
                   onClick={() => setLightbox(piece)}
                 />
@@ -102,6 +103,7 @@ export default function GalleryContent() {
         onClose={() => setLightbox(null)}
         title={lightbox?.title ?? ""}
         category={lightbox?.category ?? ""}
+        image={lightbox?.image}
       />
     </>
   );

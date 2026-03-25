@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 
 interface LightboxProps {
@@ -7,9 +8,10 @@ interface LightboxProps {
   onClose: () => void;
   title: string;
   category: string;
+  image?: string;
 }
 
-export default function Lightbox({ isOpen, onClose, title, category }: LightboxProps) {
+export default function Lightbox({ isOpen, onClose, title, category, image }: LightboxProps) {
   return (
     <AnimatePresence>
       {isOpen && (
@@ -39,17 +41,23 @@ export default function Lightbox({ isOpen, onClose, title, category }: LightboxP
               </svg>
             </button>
 
-            {/* Image placeholder */}
-            <div className="aspect-square bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center">
-              <svg className="w-20 h-20 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={1}
-                  d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
-                />
-              </svg>
-            </div>
+            {/* Image area */}
+            {image ? (
+              <div className="relative aspect-square">
+                <Image src={image} alt={title} fill className="object-cover" sizes="(max-width: 768px) 100vw, 768px" />
+              </div>
+            ) : (
+              <div className="aspect-square bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center">
+                <svg className="w-20 h-20 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={1}
+                    d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                  />
+                </svg>
+              </div>
+            )}
 
             {/* Info */}
             <div className="p-6">
