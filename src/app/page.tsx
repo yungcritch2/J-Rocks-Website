@@ -75,7 +75,7 @@ const processSteps = [
 const galleryItems = [
   { title: "Diamond Cuban Link", category: "Chains" },
   { title: "Custom Name Pendant", category: "Pendants" },
-  { title: "Princess Cut Solitaire Ring", category: "Rings", image: "/princess-cut-ring.jpg" },
+  { title: "Princess Cut Solitaire Ring", category: "Rings", image: "/Open Art Ring Photo 2.png" },
   { title: "Iced Tennis Bracelet", category: "Bracelets" },
   { title: "Gold Rope Chain", category: "Chains" },
   { title: "Heart Locket Pendant", category: "Pendants" },

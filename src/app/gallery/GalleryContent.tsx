@@ -14,7 +14,7 @@ const allPieces = [
   { title: "Custom Name Pendant", category: "Pendants" },
   { title: "Heart Locket Pendant", category: "Pendants" },
   { title: "Diamond Cross Pendant", category: "Pendants" },
-  { title: "Princess Cut Solitaire Ring", category: "Rings", image: "/princess-cut-ring.jpg" },
+  { title: "Princess Cut Solitaire Ring", category: "Rings", image: "/Open Art Ring Photo 2.png" },
   { title: "Custom Engagement Ring", category: "Rings" },
   { title: "Diamond Pinky Ring", category: "Rings" },
   { title: "Iced Tennis Bracelet", category: "Bracelets" },
