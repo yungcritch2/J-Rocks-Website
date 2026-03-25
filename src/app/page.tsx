@@ -31,13 +31,14 @@ const categories = [
     title: "Custom Rings",
     description: "Rings designed to mark your moments with lasting elegance.",
     icon: (
-      <svg className="w-8 h-8" fill="currentColor" stroke="none" viewBox="0 0 24 24">
+      <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         {/* Ring band */}
-        <path d="M12 6.5C7.86 6.5 4.5 9.86 4.5 14s3.36 7.5 7.5 7.5 7.5-3.36 7.5-7.5S16.14 6.5 12 6.5zm0 12c-2.49 0-4.5-2.01-4.5-4.5S9.51 9.5 12 9.5s4.5 2.01 4.5 4.5-2.01 4.5-4.5 4.5z" />
-        {/* Diamond prongs connecting to ring */}
-        <path d="M10.2 8.2L11 6.5h2l.8 1.7" />
+        <circle cx="12" cy="15" r="6" strokeWidth={1} />
+        {/* Prongs connecting diamond to ring */}
+        <line x1="10.5" y1="9.5" x2="11" y2="7" strokeWidth={1} />
+        <line x1="13.5" y1="9.5" x2="13" y2="7" strokeWidth={1} />
         {/* Diamond gem */}
-        <path d="M8.5 4.5L9.5 2.5h5l1 2h-7zM8.5 4.5L12 7.5l3.5-3h-7z" />
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M8.5 5L9.5 3h5l1 2H8.5zM8.5 5L12 8l3.5-3" />
       </svg>
     ),
   },
