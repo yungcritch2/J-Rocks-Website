@@ -121,8 +121,12 @@ export default function HomePage() {
         />
         {/* Subtle overlay for text readability */}
         <div className="absolute inset-0 bg-white/40" />
+        {/* Animated gold shimmer */}
+        <div className="hero-shimmer" />
+        {/* Subtle grain texture for depth */}
+        <div className="hero-grain" />
 
-        <div className="relative max-w-5xl mx-auto px-6 text-center pt-20">
+        <div className="relative z-10 max-w-5xl mx-auto px-6 text-center pt-20">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
