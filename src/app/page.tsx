@@ -195,7 +195,7 @@ export default function HomePage() {
             subtitle="From chains to rings, every piece is designed from scratch and built around your personal style."
           />
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
             {categories.map((cat, i) => (
               <motion.div
                 key={cat.title}
