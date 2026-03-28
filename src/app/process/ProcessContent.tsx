@@ -51,7 +51,6 @@ const steps = [
     description:
       "This is where the magic happens. Our skilled artisans bring your approved design to life using premium materials and meticulous techniques. Every detail is executed with precision and care.",
     details: [
-      "Expert handcrafted construction",
       "Premium materials and gemstones",
       "Quality checkpoints throughout",
       "Progress updates along the way",
