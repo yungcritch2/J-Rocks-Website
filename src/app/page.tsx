@@ -149,9 +149,7 @@ export default function HomePage() {
             transition={{ duration: 0.8, delay: 0.3 }}
             className="max-w-2xl mx-auto text-base sm:text-lg font-light text-gray-warm leading-relaxed mb-10"
           >
-            We design and craft one-of-a-kind jewelry pieces tailored to your vision. From concept
-            to creation, every detail is intentional — because your piece should be as unique as
-            you are.
+            Designed around your story. Crafted to last forever.
           </motion.p>
 
           <motion.div
