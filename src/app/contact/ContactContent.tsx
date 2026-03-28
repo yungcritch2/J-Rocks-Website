@@ -38,7 +38,6 @@ const socialLinks = [
   { label: "Instagram", href: "#" },
   { label: "Facebook", href: "#" },
   { label: "TikTok", href: "#" },
-  { label: "Pinterest", href: "#" },
 ];
 
 export default function ContactContent() {
