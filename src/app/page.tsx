@@ -55,7 +55,7 @@ const processSteps = [
   },
   {
     title: "Crafting Your Piece",
-    description: "Master artisans bring your design to life with precision.",
+    description: "Each piece is personally crafted with precision, bringing your design to life.",
   },
   {
     title: "Final Delivery",
