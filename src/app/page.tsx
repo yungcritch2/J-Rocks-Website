@@ -208,7 +208,7 @@ export default function HomePage() {
               >
                 <Link
                   href="/gallery"
-                  className="block bg-white rounded-sm p-8 text-center border border-gray-100 hover:border-gold/30 hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(0,0,0,0.08)] transition-all duration-300 ease-out group"
+                  className="block rounded-sm p-8 text-center border border-white/40 hover:border-gold/30 hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(0,0,0,0.08)] transition-all duration-300 ease-out group bg-white/60 backdrop-blur-[10px]"
                 >
                   <div className="w-16 h-16 mx-auto mb-5 rounded-full bg-cream flex items-center justify-center text-gold group-hover:bg-gold group-hover:text-white group-hover:scale-105 transition-all duration-300 ease-out">
                     {cat.icon}
