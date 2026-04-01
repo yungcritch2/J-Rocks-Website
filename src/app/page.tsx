@@ -47,19 +47,19 @@ const categories = [
 const processSteps = [
   {
     title: "Share Your Idea",
-    description: "Tell us your vision — a sketch, a photo, or just a feeling. We start with you.",
+    description: "Start with a vision — a sketch, a memory, or a moment.",
   },
   {
     title: "Design Consultation",
-    description: "We refine your concept together, choosing materials, dimensions, and details.",
+    description: "We refine every detail together, from stones to setting.",
   },
   {
     title: "Crafting Your Piece",
-    description: "Our artisans bring your design to life with meticulous craftsmanship.",
+    description: "Master artisans bring your design to life with precision.",
   },
   {
     title: "Final Delivery",
-    description: "Your finished piece, beautifully presented and ready to wear with pride.",
+    description: "A finished piece, crafted to be worn for a lifetime.",
   },
 ];
 
