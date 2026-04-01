@@ -160,23 +160,24 @@ export default function HomePage() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.45 }}
-            className="flex flex-col items-center gap-5"
+            className="flex flex-col items-center gap-6"
           >
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <Link
-                href="/contact"
-                className="inline-block px-12 py-5 text-sm font-light tracking-wider uppercase bg-charcoal text-white rounded-sm text-center transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(184,150,12,0.35)]"
-              >
-                Start Your Custom Piece
-              </Link>
-              <Link
-                href="/gallery"
-                className="inline-block px-6 py-3 text-sm font-light tracking-wider uppercase text-charcoal/70 hover:text-gold transition-colors duration-300 border-b border-charcoal/20 hover:border-gold/50"
-              >
-                View Gallery
-              </Link>
-            </div>
-            <p className="text-xs font-light tracking-wide text-gray-warm/60">
+            <Link
+              href="/contact"
+              className="inline-block px-12 py-5 text-sm font-light tracking-wider uppercase bg-charcoal text-white rounded-sm text-center transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(184,150,12,0.35)]"
+            >
+              Start Your Custom Piece
+            </Link>
+            <Link
+              href="/gallery"
+              className="group inline-flex items-center gap-1.5 text-sm font-light tracking-wider text-charcoal/60 hover:text-gold transition-colors duration-300"
+            >
+              View Gallery
+              <span className="inline-block transition-transform duration-300 group-hover:translate-x-1">
+                &rarr;
+              </span>
+            </Link>
+            <p className="text-xs font-light tracking-wide text-gray-warm/50">
               Free consultation &bull; No commitment
             </p>
           </motion.div>
